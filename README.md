@@ -80,6 +80,26 @@ npm run dev
 ```
 The application will be accessible at `http://localhost:5173`.
 
+## 🌐 Alternative Backend Deployment (Ngrok)
+
+If you don't want to deploy the backend to a cloud provider, you can use **Ngrok** to expose your local backend to the internet. This is great for demos or testing.
+
+1.  **Install Ngrok**: Download and install from [ngrok.com](https://ngrok.com/).
+2.  **Start Backend**: Ensure your FastAPI server is running locally on port 8000.
+    ```bash
+    python -m uvicorn app.server:app --reload
+    ```
+3.  **Expose Port**: Run ngrok to tunnel port 8000.
+    ```bash
+    ngrok http 8000
+    ```
+4.  **Get Public URL**: Copy the `https` URL provided by ngrok (e.g., `https://1234-56-78.ngrok-free.app`).
+5.  **Update Frontend**:
+    -   If running locally: Update `.env` with `VITE_API_URL=https://your-ngrok-url`.
+    -   If deployed on Vercel: Update the `VITE_API_URL` environment variable in your Vercel project settings with the ngrok URL.
+
+**Note**: The ngrok URL changes every time you restart ngrok (unless you have a paid plan). You will need to update the environment variable whenever the URL changes.
+
 ## 👥 Project Team
 
 **Supervisor:**
