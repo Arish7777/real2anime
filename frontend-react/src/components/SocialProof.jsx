@@ -14,7 +14,7 @@ const SocialProof = () => {
         {
             icon: <FaLinkedin />,
             label: 'LinkedIn',
-            url: 'https://linkedin.com/in/yourusername' // Replace with your LinkedIn URL
+            url: 'https://www.linkedin.com/in/muhammad-arish-248471283/' // Replace with your LinkedIn URL
         },
         {
             icon: <FaShare />,
