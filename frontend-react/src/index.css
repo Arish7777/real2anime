@@ -89,12 +89,15 @@ body::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   opacity: 0.15;
   filter: blur(2px);
   animation: gokuGlow 8s ease-in-out infinite;
   pointer-events: none;
   z-index: 0;
+  /* Remove background-attachment for better mobile support */
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 @keyframes gokuGlow {
