@@ -97,5 +97,4 @@ The application will be accessible at `http://localhost:5173`.
 
 This project is licensed under the MIT License.
 
----
-*Built with ❤️ by the Real2Anime Team*
+
