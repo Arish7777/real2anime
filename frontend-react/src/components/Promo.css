@@ -1,0 +1,363 @@
+.promo-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.promo-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(157, 78, 221, 0.2));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid var(--primary-cyan);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 217, 255, 0.4),
+        inset 0 0 30px rgba(0, 217, 255, 0.1);
+    transition: all 0.5s ease;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(0, 217, 255, 0.2),
+            transparent);
+    animation: rotateGlow 4s linear infinite;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.promo-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.8),
+        0 0 60px rgba(0, 217, 255, 0.6),
+        0 0 100px rgba(157, 78, 221, 0.4);
+    border-color: var(--neon-purple);
+}
+
+.promo-badge {
+    background: linear-gradient(135deg, var(--accent-pink), var(--accent-yellow));
+    color: var(--black);
+    padding: 0.7rem 2rem;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: var(--font-futuristic);
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    box-shadow:
+        0 4px 15px rgba(255, 0, 110, 0.5),
+        0 0 20px rgba(255, 190, 11, 0.3);
+    animation: badgePulse 2s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.promo-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: var(--spacing-md) 0;
+    background: linear-gradient(135deg, var(--primary-cyan), var(--white), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
+    animation: promoGlow 3s ease-in-out infinite;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes promoGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.8));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 40px rgba(157, 78, 221, 1));
+    }
+}
+
+.promo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-futuristic);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    color: var(--text-light);
+}
+
+.promo-card .btn-primary-custom {
+    background: linear-gradient(135deg, var(--white), var(--text-light));
+    color: var(--black);
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--primary-cyan);
+}
+
+.promo-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.promo-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(157, 78, 221, 0.2));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid var(--primary-cyan);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 217, 255, 0.4),
+        inset 0 0 30px rgba(0, 217, 255, 0.1);
+    transition: all 0.5s ease;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(0, 217, 255, 0.2),
+            transparent);
+    animation: rotateGlow 4s linear infinite;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.promo-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.8),
+        0 0 60px rgba(0, 217, 255, 0.6),
+        0 0 100px rgba(157, 78, 221, 0.4);
+    border-color: var(--neon-purple);
+}
+
+.promo-badge {
+    background: linear-gradient(135deg, var(--accent-pink), var(--accent-yellow));
+    color: var(--black);
+    padding: 0.7rem 2rem;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: var(--font-futuristic);
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    box-shadow:
+        0 4px 15px rgba(255, 0, 110, 0.5),
+        0 0 20px rgba(255, 190, 11, 0.3);
+    animation: badgePulse 2s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.promo-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: var(--spacing-md) 0;
+    background: linear-gradient(135deg, var(--primary-cyan), var(--white), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
+    animation: promoGlow 3s ease-in-out infinite;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes promoGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.8));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 40px rgba(157, 78, 221, 1));
+    }
+}
+
+.promo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-futuristic);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    color: var(--text-light);
+}
+
+.promo-card .btn-primary-custom {
+    background: linear-gradient(135deg, var(--white), var(--text-light));
+    color: var(--black);
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--primary-cyan);
+}
+
+.promo-card .btn-primary-custom:hover {
+    background: linear-gradient(135deg, var(--primary-cyan), var(--neon-purple));
+    color: var(--white);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow:
+        0 10px 30px rgba(0, 217, 255, 0.8),
+        0 0 40px var(--primary-cyan);
+}
+
+/* Responsive Promo Section */
+@media (max-width: 991px) {
+    .promo-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .promo-card {
+        padding: var(--spacing-lg);
+    }
+
+    .promo-title {
+        font-size: 4rem;
+    }
+
+    .promo-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo-section {
+        padding: var(--spacing-md) 0;
+    }
+
+    .promo-card {
+        padding: var(--spacing-md);
+        border-radius: var(--radius-md);
+    }
+
+    .promo-badge {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .promo-title {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin: var(--spacing-sm) 0;
+    }
+
+    .promo-text {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .promo-card .btn-primary-custom {
+        width: 100%;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .promo-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .promo-badge {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.75rem;
+    }
+
+    .promo-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .promo-text {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .promo-card .btn-primary-custom {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .promo-title {
+        font-size: 2rem;
+    }
+
+    .promo-text {
+        font-size: 0.9rem;
+    }
+}

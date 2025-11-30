@@ -1,0 +1,10 @@
+The environment.yml or env.yml has all the libraries to run the code 
+You can create a conda env or a virtual env and run the code. 
+once you have created the env 
+
+Run the backend as (the server)
+
+uvicorn app.server:app --host 0.0.0.0 --port 8000
+
+Run the front end as (the ui)
+streamlit run frontend/streamlit_app.py
