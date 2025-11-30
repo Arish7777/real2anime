@@ -9,7 +9,7 @@ const SocialProof = () => {
         {
             icon: <FaGithub />,
             label: 'GitHub',
-            url: 'https://github.com/yourusername' // Replace with your GitHub URL
+            url: 'https://github.com/Arish7777/real2anime' // Replace with your GitHub URL
         },
         {
             icon: <FaLinkedin />,
@@ -19,7 +19,7 @@ const SocialProof = () => {
         {
             icon: <FaShare />,
             label: 'Share',
-            url: '' // Will be set to current page URL when deployed
+            url: 'whatsapp://send?text=Check out my portfolio: https://real2anime.ai' // Will be set to current page URL when deployed
         },
     ];
 

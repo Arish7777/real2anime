@@ -671,3 +671,7 @@
         max-height: 200px;
     }
 }
+.placeholder-text {
+    padding: 0 2rem;
+    text-align: center;
+}

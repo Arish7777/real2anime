@@ -29,8 +29,9 @@ const Hero = () => {
         formData.append('file', selectedFile);
 
         try {
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
             const response = await axios.post(
-                `http://localhost:8000/transform?size=${size}`,
+                `${apiUrl}/transform?size=${size}`,
                 formData,
                 {
                     responseType: 'blob',
